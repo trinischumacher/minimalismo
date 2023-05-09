@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contacto - Mi sitio web minimalista</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+      <nav>
+        <ul>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <li><a href="artistas.html">ARTISTAS</a></li>
+            <li><a href="obras.html">OBRAS</a></li>
+            <li><a href="historia.html">HISTORIA</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="iniciosesion.html">INICIAR SESIÓN</a></li>
+            <li>
+              <form class="search-form" action="/search" method="GET">
+                <input type="text" name="q" placeholder="Buscar...">
+            <button type="submit" class="search-button"><img src="images/lupa.png" alt="lupa" id="lupa" style="width: 18px; height: 18px; opacity: 70%;">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+            <div class="form-container">
+            <p class="title">CONTACTANOS</p>
+            <form class="form" method="POST" action="enviar.php">
+                <div class="input-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" style="width: 95%">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" style="width: 95%">
+                </div>
+                <div class="input-group">
+                    <label for="mensaje">Mensaje</label>
+                    <input type="text" name="mensaje" id="mensaje" style="width: 95%">
+                </div>
+                <button class="send" type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h6>"Vanguardia Minimalista" por Trinidad Schumacher. Todos los derechos reservados © 2023. </h6>
+    </footer>
+  </body>
+  </html>
