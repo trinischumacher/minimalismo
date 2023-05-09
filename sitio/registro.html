@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Iniciar Sesión/Registro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <li><a href="artistas.html">ARTISTAS</a></li>
+            <li><a href="obras.html">OBRAS</a></li>
+            <li><a href="historia.html">HISTORIA</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="iniciosesion.html">INICIAR SESIÓN</a></li>
+            <li>
+                <form class="search-form" action="/search" method="GET">
+                    <input type="text" name="q" placeholder="Buscar...">
+                    <button type="submit" class="search-button"><img src="images/lupa.png" alt="lupa" id="lupa" style="width: 20px; height: 20px; opacity: 70%;">
+                        <i class="fas fa-search"></i>
+                    </button>
+                  </form>
+            </li>
+          </ul>
+    </nav>
+	</header>
+    <main>
+            <div class="form-container">
+            <p class="title">REGISTRARSE</p>
+            <form class="form">
+                <div class="input-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" style="width: 95%">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" style="width: 95%">
+                </div>
+                <div class="input-group">
+                    <label for="username">Usuario</label>
+                    <input type="text" name="username" id="username" style="width: 95%">
+                </div>
+                <div class="input-group">
+                    <label for="username">Contraseña</label>
+                    <input type="text" name="password" id="password" style="width: 95%">
+                </div>
+                <button class="sign">Registrarse</button>
+            </form>
+            <div class="social-message">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <p class="signup">¿Ya tenes una cuenta?
+                <a rel="noopener noreferrer" href="iniciosesion.html" class="">Inicia sesión</a>
+            </p>
+        </div>
+        </main>
+    <footer>
+        <h6>"Vanguardia Minimalista" por Trinidad Schumacher. Todos los derechos reservados © 2023. </h6>
+    </footer>
+  </body>
+  </html>

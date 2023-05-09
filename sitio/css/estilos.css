@@ -1,0 +1,440 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #bfbfbf;
+	padding: 1rem;
+}
+
+a img {
+    width: 300px;
+    height: auto;
+    margin-left: 75px;
+    border-radius: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin-right: 90px;
+  margin-top: 30px;
+  margin-bottom: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul li a {
+	color: #555555;
+	text-decoration: none;
+	padding: 1rem;
+}
+
+nav ul li a:hover {
+	background-color: #c6c6c6;
+}
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+	color: #fff;
+	padding: 8px;
+	text-align: center;
+  margin-top: 7px;
+}
+
+/* Estilos específicos de la página Home */
+
+.home-background {
+	background-image: url('home-background.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-background h1 {
+	font-size: 3rem;
+	text-align: center;
+	margin: 0;
+}
+
+.home-background p {
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 1rem 0;
+}
+
+h6 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: lighter;
+  color: #e0e0e0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+
+/* Estilos específicos de la página de Artistas */
+
+.artistas {
+    margin-top: 50px;
+}
+
+.artista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .artista img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 70px;
+    margin-left: 50px;
+    margin-bottom: 70px;
+
+  }
+  
+  .artista h2 {
+    margin: 0;
+    margin-bottom: 350px;
+    color: #555555;
+  }
+
+  .artista p {
+    margin-left: -71px;
+    margin-right: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #555555;
+    font-size: 14px;
+    line-height: 18px;
+   }
+
+  @media (max-width: 768px) {
+    .artista {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .artista img {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+  
+/* Estilos específicos de la página de Obras */
+
+.obras-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .col {
+    flex: 1;
+    max-width: 300px;
+    margin: 30px;
+    text-align: center;
+  }
+  
+  .obras-section img {
+    max-width: 100%;
+    border-radius: 20px;
+    border-radius: 15%;
+    border: 3px solid #afafaf; 
+    box-shadow: 0 0 25px 7px #a1a1a1;
+    padding: 4px;
+  }
+  
+  h3 {
+    color: #555555;
+  }
+  
+  h4 {
+    text-align: center;
+    font-size: 25px;
+    color: #555555;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #555555;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }  
+
+  .galery-container{
+    width: 85%;
+    margin-bottom: 20px;
+}
+.galery-container .galery-card{
+    overflow: hidden;
+}
+.galery-container .galery-card img{
+    width: 90%;
+    height: 90%;
+    border-radius: 15%;
+    object-fit: cover;
+    transition: 1s;
+}
+.galery-container .galery-card img:hover{
+    transform: scale(1.05);
+}
+
+
+/* Estilos específicos de la página de Historia */
+
+.historia-container {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.historia-container h2 {
+	font-size: 2
+}
+
+h4 {
+  text-align: center;
+  font-size: 25px;
+  color: #555555;
+  margin-bottom: 45px;
+}
+
+h5 {
+  width: 90%;
+  margin: 10px auto 28px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  color: #555555;
+  font-weight: lighter;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 28px;
+} 
+
+/* Titulo de la pagina */
+.page-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Parrafo de la pagina */
+  .page-paragraph {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  
+/* Formulario de contacto */
+
+.send {
+  display: block;
+  width: 100%;
+  background-color: #AAA394;
+  padding: 0.75rem;
+  text-align: center;
+  color: rgba(17, 24, 39, 1);
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  margin-top: 60px;
+}
+
+.send:hover {
+  background-color: #908b82;
+}
+
+/*Formulario inicio de sesión*/
+
+.form-container {
+  border-radius: 0.75rem;
+  background-color: #333;
+  padding: 2rem;
+  color: rgba(243, 244, 246, 1);
+  width: 45%; 
+  margin: 0 auto; 
+  margin-top: 28px;
+  margin-bottom: 29px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  color: rgb(214, 211, 206);
+  margin-bottom: 4px;
+}
+
+.input-group input {
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid #555555;
+  outline: 0;
+  background-color: #bdbdbd;
+  padding: 0.75rem 1rem;
+}
+
+.input-group input:focus {
+  border-color: rgb(179, 166, 142);
+}
+
+.forgot {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175,1);
+  margin: 8px 0 14px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.forgot a,.signup a {
+  color: rgba(243, 244, 246, 1);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot a:hover, .signup a:hover {
+  text-decoration: underline rgb(167, 157, 138);
+}
+
+.sign {
+  display: block;
+  width: 100%;
+  background-color: #AAA394;
+  padding: 0.75rem;
+  text-align: center;
+  color: rgba(17, 24, 39, 1);
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.sign:hover {
+  background-color: #908b82;
+}
+
+.social-message {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  margin-bottom: 30px;
+}
+
+.line {
+  height: 1px;
+  flex: 1 1 0%;
+  background-color: #555555;
+}
+
+.signup {
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175, 1);
+}
+
+
+  /*Buscador*/
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #dbdbdb;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px;
+  width: 190px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-form input[type="text"]:focus {
+  outline: none;
+  border-bottom: 1px solid #202020;
+}
+
+.search-form .search-button {
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  color: #555;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 8px 16px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  margin-left: 15px;
+  width: 55px;
+  height: 40px;
+}
+
+.search-form .search-button:hover {
+  background-color: #c6c6c6;
+  color: #fff;
+}
+
+.search-form .search-button i {
+  margin-right: 5px;
+}
+
+
+
+
+
+
+  
+      
+  
+  
